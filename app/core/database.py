@@ -1,16 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-import os
-from dotenv import load_dotenv
+from app.core.config import settings
 
-# Load biến môi trường từ file .env
-load_dotenv()
-
-# Lấy URL kết nối từ biến môi trường
-DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Tạo engine
-engine = create_engine(DATABASE_URL)
+engine = create_engine(settings.DATABASE_URL)
 
 # Tạo session
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
