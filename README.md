@@ -37,5 +37,41 @@ This template provides a robust foundation for building modern web applications:
 - **Pytest**: Testing framework for unit and integration tests.
 
 ---
+## 📂 Project Structure
+```text
+fastapi-template/
+├── app/                        # Core application code
+│   ├── api/                    # API endpoints (routers)
+│   │   ├── __init__.py         # Marks directory as a Python package
+│   │   ├── task.py             # Task-related API endpoints (e.g., CRUD for tasks)
+│   │   ├── user.py             # User-related API endpoints (e.g., user management)
+│   ├── core/                   # Core configuration and utilities
+│   │   ├── __init__.py         # Marks directory as a Python package
+│   │   ├── config.py           # Environment variables and app settings
+│   │   ├── database.py         # Database connection and session setup
+│   ├── models/                 # SQLAlchemy database models
+│   │   ├── task.py             # Task model for database schema
+│   │   ├── user.py             # User model for database schema
+│   ├── schemas/                # Pydantic schemas for data validation
+│   │   ├── task_schema.py      # Task schemas for request/response validation
+│   │   ├── user_schema.py      # User schemas for request/response validation
+│   ├── services/               # Business logic and service layers
+│   │   ├── __init__.py         # Marks directory as a Python package
+│   │   ├── task_service.py     # Logic for task operations (e.g., create, update)
+│   │   ├── user_service.py     # Logic for user operations (e.g., auth, profile)
+│   ├── utils/                  # Utility functions and helpers
+│   │   ├── __init__.py         # Marks directory as a Python package
+│   │   ├── exception.py        # Custom exception classes
+│   │   ├── security.py         # Security utilities (e.g., JWT, password hashing)
+├── __init__.py                 # Marks app/ as a Python package
+├── main.py                     # Main application entry point (FastAPI instance)
+├── server.py                   # Server setup (e.g., Uvicorn configuration)
+├── .env.example                # Example environment variables for configuration
+├── .gitignore                  # Specifies files/folders to ignore in Git
+├── .python-version             # Specifies Python version (used by tools like pyenv)
+├── README.md                   # Project documentation
+├── pyproject.toml              # Project metadata and dependency configuration
+├── uv.lock                     # Lock file for uv (dependency manager)
+```
 
 
