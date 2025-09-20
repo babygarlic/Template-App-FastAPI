@@ -1,0 +1,15 @@
+[project]
+name = "Template-App-FastAPI"
+author ="Nguyen Thanh Sang"
+version = "0.1.0"
+description = "Template build backend app using fastapi"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "fastapi[standard]>=0.116.2",
+    "passlib>=1.7.4",
+    "psycopg2>=2.9.10",
+    "pydantic>=2.11.9",
+    "sqlalchemy>=2.0.43",
+]
