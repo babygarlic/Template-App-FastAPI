@@ -1,9 +1,9 @@
 # FastAPI Template Application
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.1.0-green.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.116.2-009688.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)
+[![Database](https://img.shields.io/badge/database-PostgreSQL-brightgreen)]()
 
 
 A modern, scalable, and well-structured template for building web applications with **FastAPI**, **SQLAlchemy**, and **PostgreSQL**. This template is designed to be easy to set up, maintain, and extend, making it ideal for personal projects.
@@ -73,6 +73,7 @@ fastapi-template/
 ├── pyproject.toml              # Project metadata and dependency configuration
 ├── uv.lock                     # Lock file for uv (dependency manager)
 ```
+
 
 
 
