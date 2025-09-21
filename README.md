@@ -28,7 +28,7 @@ This template provides a robust foundation for building modern web applications:
 
 ## 🛠 Tech Stack
 
-- **FastAPI**: A modern, fast (high-performance), web framework for building APIs with Python 3.9+.
+- **FastAPI**: A modern, fast (high-performance), web framework for building APIs with Python 3.10+.
 - **SQLAlchemy**: A powerful ORM for database operations with PostgreSQL.
 - **Pydantic**: Data validation and settings management using Python type annotations.
 - **PostgreSQL**: A robust, open-source relational database.
@@ -73,6 +73,7 @@ fastapi-template/
 ├── pyproject.toml              # Project metadata and dependency configuration
 ├── uv.lock                     # Lock file for uv (dependency manager)
 ```
+
 
 
 
