@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from fastapi import Request, Response
 from app.api import task, user
 from app.core.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware

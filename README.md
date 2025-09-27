@@ -74,7 +74,9 @@ fastapi-template/
 ├── uv.lock                     # Lock file for uv (dependency manager)
 ```
 
-
+``` 
+ .venv\Scripts\activate
+ ```
 
 
 
