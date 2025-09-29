@@ -7,7 +7,6 @@ from app.services.user_service import (
     get_user, 
     get_user, 
     delete_user,
-    update_user,
     get_all_users
 )
 router = APIRouter()
@@ -40,5 +39,6 @@ async def delete(user_id: str,db: Session= Depends(get_db)):
 @router.patch("/{user_id}")
 async def update(user_id: str,user_update: UserUpdate, db: Session= Depends(get_db)):
     """Cập nhật user theo ID"""
-    user = update_user(user_id,user_update, db)
-    return user
+    #user = update_user(user_id,user_update, db)
+    #return user 
+    pass
